@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Burger.css';
-import BurgerIngredient from "./BurgerIngredient";
+import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
 const burger = (props) => {
 
@@ -17,7 +17,7 @@ const burger = (props) => {
         }, [])
 
     if (transformedIngredients.length === 0) {
-        transformedIngredients = <p>Plese start adding ingredients!</p>
+        transformedIngredients = <p>Please start adding ingredients!</p>
     }
     console.log(transformedIngredients);
 
